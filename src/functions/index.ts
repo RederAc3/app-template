@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const getData = async (url: string, setState) => {
+export const getData = async (url: string, setState, setIsLoading) => {
 
     let config = {
         headers: {
@@ -11,4 +11,5 @@ export const getData = async (url: string, setState) => {
 
     const { data } = await axios.get(url, config);
     setState(data);
+    setIsLoading(false)
 }
