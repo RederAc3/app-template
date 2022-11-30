@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Text, Image, View, ActivityIndicator } from 'react-native';
+import { Text, Image, View, ActivityIndicator, ScrollView } from 'react-native';
 
 import { getData as getAlbumDetails } from "../../functions/index";
 
@@ -17,7 +17,7 @@ const DetailsScreen: React.FC<IDetailsProps> = ({ route: { params: { title, url,
 
     return (
 
-        <View style={styles.container}>
+        <ScrollView>
 
             {isLoading ? <ActivityIndicator /> : (
                 
@@ -35,7 +35,7 @@ const DetailsScreen: React.FC<IDetailsProps> = ({ route: { params: { title, url,
                     </View>
                 </>
             )}
-        </View>
+        </ScrollView>
     )
 }
 

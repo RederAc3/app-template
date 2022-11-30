@@ -1,9 +1,6 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-    container: {
-        margin: 20
-    },
     
     image: {
         width: "100%",
@@ -11,17 +8,22 @@ export default StyleSheet.create({
     },
 
     textWrapper: {
+        margin: 20,
         marginTop: 30,
         alignItems: "center"
     },
+
     titleLabel: {
         marginTop: 10, 
         fontSize: 18,
         fontWeight: "bold"
     },
+
     title: {
-        fontSize: 25,
+        textAlign: "center",
+        fontSize: 20,
     },
+    
     album: {
         fontSize: 20
     }
